@@ -213,14 +213,7 @@
       "INVALID": null,
       "R_CONSTRAINT_NAME": "COUNTRY_C_ID_PK",
       "RELY": null,
-      "RemoteConstraint": [
-        {
-          "COLUMN_NAME": "COUNTRY_ID",
-          "POSITION": 1.0,
-          "R_CONSTRAINT_NAME": "COUNTRY_C_ID_PK",
-          "TABLE_NAME": "COUNTRIES"
-        }
-      ],
+      "RemoteConstraint": [],
       "SEARCH_CONDITION": null,
       "SEARCH_CONDITION_VC": null,
       "STATUS": "ENABLED",
@@ -290,6 +283,74 @@
     {
       "Columns": [
         {
+          "CHAR_LENGTH": 30.0,
+          "COLLATED_COLUMN_ID": null,
+          "COLUMN_LENGTH": 30.0,
+          "COLUMN_NAME": "CITY",
+          "COLUMN_POSITION": 1.0,
+          "DESCEND": "ASC",
+          "INDEX_NAME": "LOC_CITY_IX",
+          "TABLE_NAME": "LOCATIONS"
+        }
+      ],
+      "COMPRESSION": "DISABLED",
+      "DROPPED": "NO",
+      "Expression": [],
+      "GENERATED": "N",
+      "INCLUDE_COLUMN": null,
+      "INDEX_NAME": "LOC_CITY_IX",
+      "INDEX_TYPE": "NORMAL",
+      "INI_TRANS": 2.0,
+      "IOT_REDUNDANT_PKEY_ELIM": "NO",
+      "JOIN_INDEX": "NO",
+      "PARAMETERS": null,
+      "PREFIX_LENGTH": null,
+      "SECONDARY": "N",
+      "STATUS": "VALID",
+      "TABLE_NAME": "LOCATIONS",
+      "TABLE_TYPE": "TABLE",
+      "TEMPORARY": "N",
+      "TYPE": "TABLE",
+      "UNIQUENESS": "NONUNIQUE",
+      "VISIBILITY": "VISIBLE"
+    },
+    {
+      "Columns": [
+        {
+          "CHAR_LENGTH": 2.0,
+          "COLLATED_COLUMN_ID": null,
+          "COLUMN_LENGTH": 2.0,
+          "COLUMN_NAME": "COUNTRY_ID",
+          "COLUMN_POSITION": 1.0,
+          "DESCEND": "ASC",
+          "INDEX_NAME": "LOC_COUNTRY_IX",
+          "TABLE_NAME": "LOCATIONS"
+        }
+      ],
+      "COMPRESSION": "DISABLED",
+      "DROPPED": "NO",
+      "Expression": [],
+      "GENERATED": "N",
+      "INCLUDE_COLUMN": null,
+      "INDEX_NAME": "LOC_COUNTRY_IX",
+      "INDEX_TYPE": "NORMAL",
+      "INI_TRANS": 2.0,
+      "IOT_REDUNDANT_PKEY_ELIM": "NO",
+      "JOIN_INDEX": "NO",
+      "PARAMETERS": null,
+      "PREFIX_LENGTH": null,
+      "SECONDARY": "N",
+      "STATUS": "VALID",
+      "TABLE_NAME": "LOCATIONS",
+      "TABLE_TYPE": "TABLE",
+      "TEMPORARY": "N",
+      "TYPE": "TABLE",
+      "UNIQUENESS": "NONUNIQUE",
+      "VISIBILITY": "VISIBLE"
+    },
+    {
+      "Columns": [
+        {
           "CHAR_LENGTH": 0.0,
           "COLLATED_COLUMN_ID": null,
           "COLUMN_LENGTH": 22.0,
@@ -319,6 +380,40 @@
       "TEMPORARY": "N",
       "TYPE": "TABLE",
       "UNIQUENESS": "UNIQUE",
+      "VISIBILITY": "VISIBLE"
+    },
+    {
+      "Columns": [
+        {
+          "CHAR_LENGTH": 25.0,
+          "COLLATED_COLUMN_ID": null,
+          "COLUMN_LENGTH": 25.0,
+          "COLUMN_NAME": "STATE_PROVINCE",
+          "COLUMN_POSITION": 1.0,
+          "DESCEND": "ASC",
+          "INDEX_NAME": "LOC_STATE_PROVINCE_IX",
+          "TABLE_NAME": "LOCATIONS"
+        }
+      ],
+      "COMPRESSION": "DISABLED",
+      "DROPPED": "NO",
+      "Expression": [],
+      "GENERATED": "N",
+      "INCLUDE_COLUMN": null,
+      "INDEX_NAME": "LOC_STATE_PROVINCE_IX",
+      "INDEX_TYPE": "NORMAL",
+      "INI_TRANS": 2.0,
+      "IOT_REDUNDANT_PKEY_ELIM": "NO",
+      "JOIN_INDEX": "NO",
+      "PARAMETERS": null,
+      "PREFIX_LENGTH": null,
+      "SECONDARY": "N",
+      "STATUS": "VALID",
+      "TABLE_NAME": "LOCATIONS",
+      "TABLE_TYPE": "TABLE",
+      "TEMPORARY": "N",
+      "TYPE": "TABLE",
+      "UNIQUENESS": "NONUNIQUE",
       "VISIBILITY": "VISIBLE"
     }
   ]

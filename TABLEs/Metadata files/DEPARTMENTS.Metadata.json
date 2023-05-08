@@ -291,6 +291,40 @@
       "TYPE": "TABLE",
       "UNIQUENESS": "UNIQUE",
       "VISIBILITY": "VISIBLE"
+    },
+    {
+      "Columns": [
+        {
+          "CHAR_LENGTH": 0.0,
+          "COLLATED_COLUMN_ID": null,
+          "COLUMN_LENGTH": 22.0,
+          "COLUMN_NAME": "LOCATION_ID",
+          "COLUMN_POSITION": 1.0,
+          "DESCEND": "ASC",
+          "INDEX_NAME": "DEPT_LOCATION_IX",
+          "TABLE_NAME": "DEPARTMENTS"
+        }
+      ],
+      "COMPRESSION": "DISABLED",
+      "DROPPED": "NO",
+      "Expression": [],
+      "GENERATED": "N",
+      "INCLUDE_COLUMN": null,
+      "INDEX_NAME": "DEPT_LOCATION_IX",
+      "INDEX_TYPE": "NORMAL",
+      "INI_TRANS": 2.0,
+      "IOT_REDUNDANT_PKEY_ELIM": "NO",
+      "JOIN_INDEX": "NO",
+      "PARAMETERS": null,
+      "PREFIX_LENGTH": null,
+      "SECONDARY": "N",
+      "STATUS": "VALID",
+      "TABLE_NAME": "DEPARTMENTS",
+      "TABLE_TYPE": "TABLE",
+      "TEMPORARY": "N",
+      "TYPE": "TABLE",
+      "UNIQUENESS": "NONUNIQUE",
+      "VISIBILITY": "VISIBLE"
     }
   ]
 }

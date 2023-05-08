@@ -520,14 +520,7 @@
       "INVALID": null,
       "R_CONSTRAINT_NAME": "JOB_ID_PK",
       "RELY": null,
-      "RemoteConstraint": [
-        {
-          "COLUMN_NAME": "JOB_ID",
-          "POSITION": 1.0,
-          "R_CONSTRAINT_NAME": "JOB_ID_PK",
-          "TABLE_NAME": "JOBS"
-        }
-      ],
+      "RemoteConstraint": [],
       "SEARCH_CONDITION": null,
       "SEARCH_CONDITION_VC": null,
       "STATUS": "ENABLED",
@@ -660,6 +653,40 @@
     {
       "Columns": [
         {
+          "CHAR_LENGTH": 0.0,
+          "COLLATED_COLUMN_ID": null,
+          "COLUMN_LENGTH": 22.0,
+          "COLUMN_NAME": "DEPARTMENT_ID",
+          "COLUMN_POSITION": 1.0,
+          "DESCEND": "ASC",
+          "INDEX_NAME": "EMP_DEPARTMENT_IX",
+          "TABLE_NAME": "EMPLOYEES"
+        }
+      ],
+      "COMPRESSION": "DISABLED",
+      "DROPPED": "NO",
+      "Expression": [],
+      "GENERATED": "N",
+      "INCLUDE_COLUMN": null,
+      "INDEX_NAME": "EMP_DEPARTMENT_IX",
+      "INDEX_TYPE": "NORMAL",
+      "INI_TRANS": 2.0,
+      "IOT_REDUNDANT_PKEY_ELIM": "NO",
+      "JOIN_INDEX": "NO",
+      "PARAMETERS": null,
+      "PREFIX_LENGTH": null,
+      "SECONDARY": "N",
+      "STATUS": "VALID",
+      "TABLE_NAME": "EMPLOYEES",
+      "TABLE_TYPE": "TABLE",
+      "TEMPORARY": "N",
+      "TYPE": "TABLE",
+      "UNIQUENESS": "NONUNIQUE",
+      "VISIBILITY": "VISIBLE"
+    },
+    {
+      "Columns": [
+        {
           "CHAR_LENGTH": 25.0,
           "COLLATED_COLUMN_ID": null,
           "COLUMN_LENGTH": 25.0,
@@ -723,6 +750,118 @@
       "TEMPORARY": "N",
       "TYPE": "TABLE",
       "UNIQUENESS": "UNIQUE",
+      "VISIBILITY": "VISIBLE"
+    },
+    {
+      "Columns": [
+        {
+          "CHAR_LENGTH": 10.0,
+          "COLLATED_COLUMN_ID": null,
+          "COLUMN_LENGTH": 10.0,
+          "COLUMN_NAME": "JOB_ID",
+          "COLUMN_POSITION": 1.0,
+          "DESCEND": "ASC",
+          "INDEX_NAME": "EMP_JOB_IX",
+          "TABLE_NAME": "EMPLOYEES"
+        }
+      ],
+      "COMPRESSION": "DISABLED",
+      "DROPPED": "NO",
+      "Expression": [],
+      "GENERATED": "N",
+      "INCLUDE_COLUMN": null,
+      "INDEX_NAME": "EMP_JOB_IX",
+      "INDEX_TYPE": "NORMAL",
+      "INI_TRANS": 2.0,
+      "IOT_REDUNDANT_PKEY_ELIM": "NO",
+      "JOIN_INDEX": "NO",
+      "PARAMETERS": null,
+      "PREFIX_LENGTH": null,
+      "SECONDARY": "N",
+      "STATUS": "VALID",
+      "TABLE_NAME": "EMPLOYEES",
+      "TABLE_TYPE": "TABLE",
+      "TEMPORARY": "N",
+      "TYPE": "TABLE",
+      "UNIQUENESS": "NONUNIQUE",
+      "VISIBILITY": "VISIBLE"
+    },
+    {
+      "Columns": [
+        {
+          "CHAR_LENGTH": 0.0,
+          "COLLATED_COLUMN_ID": null,
+          "COLUMN_LENGTH": 22.0,
+          "COLUMN_NAME": "MANAGER_ID",
+          "COLUMN_POSITION": 1.0,
+          "DESCEND": "ASC",
+          "INDEX_NAME": "EMP_MANAGER_IX",
+          "TABLE_NAME": "EMPLOYEES"
+        }
+      ],
+      "COMPRESSION": "DISABLED",
+      "DROPPED": "NO",
+      "Expression": [],
+      "GENERATED": "N",
+      "INCLUDE_COLUMN": null,
+      "INDEX_NAME": "EMP_MANAGER_IX",
+      "INDEX_TYPE": "NORMAL",
+      "INI_TRANS": 2.0,
+      "IOT_REDUNDANT_PKEY_ELIM": "NO",
+      "JOIN_INDEX": "NO",
+      "PARAMETERS": null,
+      "PREFIX_LENGTH": null,
+      "SECONDARY": "N",
+      "STATUS": "VALID",
+      "TABLE_NAME": "EMPLOYEES",
+      "TABLE_TYPE": "TABLE",
+      "TEMPORARY": "N",
+      "TYPE": "TABLE",
+      "UNIQUENESS": "NONUNIQUE",
+      "VISIBILITY": "VISIBLE"
+    },
+    {
+      "Columns": [
+        {
+          "CHAR_LENGTH": 20.0,
+          "COLLATED_COLUMN_ID": null,
+          "COLUMN_LENGTH": 20.0,
+          "COLUMN_NAME": "FIRST_NAME",
+          "COLUMN_POSITION": 2.0,
+          "DESCEND": "ASC",
+          "INDEX_NAME": "EMP_NAME_IX",
+          "TABLE_NAME": "EMPLOYEES"
+        },
+        {
+          "CHAR_LENGTH": 25.0,
+          "COLLATED_COLUMN_ID": null,
+          "COLUMN_LENGTH": 25.0,
+          "COLUMN_NAME": "LAST_NAME",
+          "COLUMN_POSITION": 1.0,
+          "DESCEND": "ASC",
+          "INDEX_NAME": "EMP_NAME_IX",
+          "TABLE_NAME": "EMPLOYEES"
+        }
+      ],
+      "COMPRESSION": "DISABLED",
+      "DROPPED": "NO",
+      "Expression": [],
+      "GENERATED": "N",
+      "INCLUDE_COLUMN": null,
+      "INDEX_NAME": "EMP_NAME_IX",
+      "INDEX_TYPE": "NORMAL",
+      "INI_TRANS": 2.0,
+      "IOT_REDUNDANT_PKEY_ELIM": "NO",
+      "JOIN_INDEX": "NO",
+      "PARAMETERS": null,
+      "PREFIX_LENGTH": null,
+      "SECONDARY": "N",
+      "STATUS": "VALID",
+      "TABLE_NAME": "EMPLOYEES",
+      "TABLE_TYPE": "TABLE",
+      "TEMPORARY": "N",
+      "TYPE": "TABLE",
+      "UNIQUENESS": "NONUNIQUE",
       "VISIBILITY": "VISIBLE"
     }
   ]
