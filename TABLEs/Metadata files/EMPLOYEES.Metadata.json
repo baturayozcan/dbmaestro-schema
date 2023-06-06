@@ -18,7 +18,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 1.0,
@@ -50,7 +49,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 2.0,
@@ -82,7 +80,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 3.0,
@@ -114,7 +111,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 4.0,
@@ -146,7 +142,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 5.0,
@@ -178,7 +173,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 6.0,
@@ -210,7 +204,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 7.0,
@@ -242,7 +235,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 8.0,
@@ -274,7 +266,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 9.0,
@@ -306,7 +297,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 10.0,
@@ -338,7 +328,6 @@
       "DEFAULT_ON_NULL": "NO",
       "Encrypted": [],
       "HIDDEN_COLUMN": "NO",
-      "HISTOGRAM": "NONE",
       "Identity": [],
       "IDENTITY_COLUMN": "NO",
       "INTERNAL_COLUMN_ID": 11.0,
@@ -353,23 +342,34 @@
       "VIRTUAL_COLUMN": "NO"
     }
   ],
+  "Column_Comments": [],
+  "Column_Grants": [],
+  "Comments": [],
+  "General": [
+    {
+      "IOT_TYPE": null,
+      "TABLE_NAME": "EMPLOYEES",
+      "TYPE": "TABLE"
+    }
+  ],
+  "Grants": [],
   "Table_Constraints": [
     {
       "BAD": null,
       "Columns": [
         {
           "COLUMN_NAME": "DEPARTMENT_ID",
-          "CONSTRAINT_NAME": "EMP_DEPT_FK",
           "POSITION": 1.0,
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
-      "CONSTRAINT_NAME": "EMP_DEPT_FK",
       "CONSTRAINT_TYPE": "R",
       "DEFERRABLE": "NOT DEFERRABLE",
       "DEFERRED": "IMMEDIATE",
       "DELETE_RULE": "NO ACTION",
       "GENERATED": "USER NAME",
+      "GENERATED_CONSTRAINT_NAME": "EMP_DEPT_FK",
+      "INDEX_NAME": null,
       "INVALID": null,
       "R_CONSTRAINT_NAME": "DEPT_ID_PK",
       "RELY": null,
@@ -394,45 +394,17 @@
       "Columns": [
         {
           "COLUMN_NAME": "EMAIL",
-          "CONSTRAINT_NAME": "EMP_EMAIL_NN",
-          "POSITION": null,
-          "TABLE_NAME": "EMPLOYEES"
-        }
-      ],
-      "CONSTRAINT_NAME": "EMP_EMAIL_NN",
-      "CONSTRAINT_TYPE": "C",
-      "DEFERRABLE": "NOT DEFERRABLE",
-      "DEFERRED": "IMMEDIATE",
-      "DELETE_RULE": null,
-      "GENERATED": "USER NAME",
-      "INVALID": null,
-      "R_CONSTRAINT_NAME": null,
-      "RELY": null,
-      "RemoteConstraint": [],
-      "SEARCH_CONDITION": "",
-      "SEARCH_CONDITION_VC": "\"EMAIL\" IS NOT NULL",
-      "STATUS": "ENABLED",
-      "TABLE_NAME": "EMPLOYEES",
-      "TYPE": "TABLE",
-      "VALIDATED": "VALIDATED",
-      "VIEW_RELATED": null
-    },
-    {
-      "BAD": null,
-      "Columns": [
-        {
-          "COLUMN_NAME": "EMAIL",
-          "CONSTRAINT_NAME": "EMP_EMAIL_UK",
           "POSITION": 1.0,
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
-      "CONSTRAINT_NAME": "EMP_EMAIL_UK",
       "CONSTRAINT_TYPE": "U",
       "DEFERRABLE": "NOT DEFERRABLE",
       "DEFERRED": "IMMEDIATE",
       "DELETE_RULE": null,
       "GENERATED": "USER NAME",
+      "GENERATED_CONSTRAINT_NAME": "EMP_EMAIL_UK",
+      "INDEX_NAME": "EMP_EMAIL_UK",
       "INVALID": null,
       "R_CONSTRAINT_NAME": null,
       "RELY": null,
@@ -450,17 +422,17 @@
       "Columns": [
         {
           "COLUMN_NAME": "EMPLOYEE_ID",
-          "CONSTRAINT_NAME": "EMP_EMP_ID_PK",
           "POSITION": 1.0,
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
-      "CONSTRAINT_NAME": "EMP_EMP_ID_PK",
       "CONSTRAINT_TYPE": "P",
       "DEFERRABLE": "NOT DEFERRABLE",
       "DEFERRED": "IMMEDIATE",
       "DELETE_RULE": null,
       "GENERATED": "USER NAME",
+      "GENERATED_CONSTRAINT_NAME": "EMP_EMP_ID_PK",
+      "INDEX_NAME": "EMP_EMP_ID_PK",
       "INVALID": null,
       "R_CONSTRAINT_NAME": null,
       "RELY": null,
@@ -477,108 +449,31 @@
       "BAD": null,
       "Columns": [
         {
-          "COLUMN_NAME": "HIRE_DATE",
-          "CONSTRAINT_NAME": "EMP_HIRE_DATE_NN",
-          "POSITION": null,
-          "TABLE_NAME": "EMPLOYEES"
-        }
-      ],
-      "CONSTRAINT_NAME": "EMP_HIRE_DATE_NN",
-      "CONSTRAINT_TYPE": "C",
-      "DEFERRABLE": "NOT DEFERRABLE",
-      "DEFERRED": "IMMEDIATE",
-      "DELETE_RULE": null,
-      "GENERATED": "USER NAME",
-      "INVALID": null,
-      "R_CONSTRAINT_NAME": null,
-      "RELY": null,
-      "RemoteConstraint": [],
-      "SEARCH_CONDITION": "",
-      "SEARCH_CONDITION_VC": "\"HIRE_DATE\" IS NOT NULL",
-      "STATUS": "ENABLED",
-      "TABLE_NAME": "EMPLOYEES",
-      "TYPE": "TABLE",
-      "VALIDATED": "VALIDATED",
-      "VIEW_RELATED": null
-    },
-    {
-      "BAD": null,
-      "Columns": [
-        {
           "COLUMN_NAME": "JOB_ID",
-          "CONSTRAINT_NAME": "EMP_JOB_FK",
           "POSITION": 1.0,
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
-      "CONSTRAINT_NAME": "EMP_JOB_FK",
       "CONSTRAINT_TYPE": "R",
       "DEFERRABLE": "NOT DEFERRABLE",
       "DEFERRED": "IMMEDIATE",
       "DELETE_RULE": "NO ACTION",
       "GENERATED": "USER NAME",
+      "GENERATED_CONSTRAINT_NAME": "EMP_JOB_FK",
+      "INDEX_NAME": null,
       "INVALID": null,
       "R_CONSTRAINT_NAME": "JOB_ID_PK",
       "RELY": null,
-      "RemoteConstraint": [],
-      "SEARCH_CONDITION": null,
-      "SEARCH_CONDITION_VC": null,
-      "STATUS": "ENABLED",
-      "TABLE_NAME": "EMPLOYEES",
-      "TYPE": "TABLE",
-      "VALIDATED": "VALIDATED",
-      "VIEW_RELATED": null
-    },
-    {
-      "BAD": null,
-      "Columns": [
+      "RemoteConstraint": [
         {
           "COLUMN_NAME": "JOB_ID",
-          "CONSTRAINT_NAME": "EMP_JOB_NN",
-          "POSITION": null,
-          "TABLE_NAME": "EMPLOYEES"
+          "POSITION": 1.0,
+          "R_CONSTRAINT_NAME": "JOB_ID_PK",
+          "TABLE_NAME": "JOBS"
         }
       ],
-      "CONSTRAINT_NAME": "EMP_JOB_NN",
-      "CONSTRAINT_TYPE": "C",
-      "DEFERRABLE": "NOT DEFERRABLE",
-      "DEFERRED": "IMMEDIATE",
-      "DELETE_RULE": null,
-      "GENERATED": "USER NAME",
-      "INVALID": null,
-      "R_CONSTRAINT_NAME": null,
-      "RELY": null,
-      "RemoteConstraint": [],
-      "SEARCH_CONDITION": "",
-      "SEARCH_CONDITION_VC": "\"JOB_ID\" IS NOT NULL",
-      "STATUS": "ENABLED",
-      "TABLE_NAME": "EMPLOYEES",
-      "TYPE": "TABLE",
-      "VALIDATED": "VALIDATED",
-      "VIEW_RELATED": null
-    },
-    {
-      "BAD": null,
-      "Columns": [
-        {
-          "COLUMN_NAME": "LAST_NAME",
-          "CONSTRAINT_NAME": "EMP_LAST_NAME_NN",
-          "POSITION": null,
-          "TABLE_NAME": "EMPLOYEES"
-        }
-      ],
-      "CONSTRAINT_NAME": "EMP_LAST_NAME_NN",
-      "CONSTRAINT_TYPE": "C",
-      "DEFERRABLE": "NOT DEFERRABLE",
-      "DEFERRED": "IMMEDIATE",
-      "DELETE_RULE": null,
-      "GENERATED": "USER NAME",
-      "INVALID": null,
-      "R_CONSTRAINT_NAME": null,
-      "RELY": null,
-      "RemoteConstraint": [],
-      "SEARCH_CONDITION": "",
-      "SEARCH_CONDITION_VC": "\"LAST_NAME\" IS NOT NULL",
+      "SEARCH_CONDITION": null,
+      "SEARCH_CONDITION_VC": null,
       "STATUS": "ENABLED",
       "TABLE_NAME": "EMPLOYEES",
       "TYPE": "TABLE",
@@ -590,17 +485,17 @@
       "Columns": [
         {
           "COLUMN_NAME": "MANAGER_ID",
-          "CONSTRAINT_NAME": "EMP_MANAGER_FK",
           "POSITION": 1.0,
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
-      "CONSTRAINT_NAME": "EMP_MANAGER_FK",
       "CONSTRAINT_TYPE": "R",
       "DEFERRABLE": "NOT DEFERRABLE",
       "DEFERRED": "IMMEDIATE",
       "DELETE_RULE": "NO ACTION",
       "GENERATED": "USER NAME",
+      "GENERATED_CONSTRAINT_NAME": "EMP_MANAGER_FK",
+      "INDEX_NAME": null,
       "INVALID": null,
       "R_CONSTRAINT_NAME": "EMP_EMP_ID_PK",
       "RELY": null,
@@ -625,22 +520,22 @@
       "Columns": [
         {
           "COLUMN_NAME": "SALARY",
-          "CONSTRAINT_NAME": "EMP_SALARY_MIN",
           "POSITION": null,
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
-      "CONSTRAINT_NAME": "EMP_SALARY_MIN",
       "CONSTRAINT_TYPE": "C",
       "DEFERRABLE": "NOT DEFERRABLE",
       "DEFERRED": "IMMEDIATE",
       "DELETE_RULE": null,
       "GENERATED": "USER NAME",
+      "GENERATED_CONSTRAINT_NAME": "EMP_SALARY_MIN",
+      "INDEX_NAME": null,
       "INVALID": null,
       "R_CONSTRAINT_NAME": null,
       "RELY": null,
       "RemoteConstraint": [],
-      "SEARCH_CONDITION": "",
+      "SEARCH_CONDITION": "salary > 0",
       "SEARCH_CONDITION_VC": "salary > 0",
       "STATUS": "ENABLED",
       "TABLE_NAME": "EMPLOYEES",
@@ -659,7 +554,6 @@
           "COLUMN_NAME": "DEPARTMENT_ID",
           "COLUMN_POSITION": 1.0,
           "DESCEND": "ASC",
-          "INDEX_NAME": "EMP_DEPARTMENT_IX",
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
@@ -667,8 +561,8 @@
       "DROPPED": "NO",
       "Expression": [],
       "GENERATED": "N",
+      "GENERATED_INDEX_NAME": "EMP_DEPARTMENT_IX",
       "INCLUDE_COLUMN": null,
-      "INDEX_NAME": "EMP_DEPARTMENT_IX",
       "INDEX_TYPE": "NORMAL",
       "INI_TRANS": 2.0,
       "IOT_REDUNDANT_PKEY_ELIM": "NO",
@@ -687,81 +581,12 @@
     {
       "Columns": [
         {
-          "CHAR_LENGTH": 25.0,
-          "COLLATED_COLUMN_ID": null,
-          "COLUMN_LENGTH": 25.0,
-          "COLUMN_NAME": "EMAIL",
-          "COLUMN_POSITION": 1.0,
-          "DESCEND": "ASC",
-          "INDEX_NAME": "EMP_EMAIL_UK",
-          "TABLE_NAME": "EMPLOYEES"
-        }
-      ],
-      "COMPRESSION": "DISABLED",
-      "DROPPED": "NO",
-      "Expression": [],
-      "GENERATED": "N",
-      "INCLUDE_COLUMN": null,
-      "INDEX_NAME": "EMP_EMAIL_UK",
-      "INDEX_TYPE": "NORMAL",
-      "INI_TRANS": 2.0,
-      "IOT_REDUNDANT_PKEY_ELIM": "NO",
-      "JOIN_INDEX": "NO",
-      "PARAMETERS": null,
-      "PREFIX_LENGTH": null,
-      "SECONDARY": "N",
-      "STATUS": "VALID",
-      "TABLE_NAME": "EMPLOYEES",
-      "TABLE_TYPE": "TABLE",
-      "TEMPORARY": "N",
-      "TYPE": "TABLE",
-      "UNIQUENESS": "UNIQUE",
-      "VISIBILITY": "VISIBLE"
-    },
-    {
-      "Columns": [
-        {
-          "CHAR_LENGTH": 0.0,
-          "COLLATED_COLUMN_ID": null,
-          "COLUMN_LENGTH": 22.0,
-          "COLUMN_NAME": "EMPLOYEE_ID",
-          "COLUMN_POSITION": 1.0,
-          "DESCEND": "ASC",
-          "INDEX_NAME": "EMP_EMP_ID_PK",
-          "TABLE_NAME": "EMPLOYEES"
-        }
-      ],
-      "COMPRESSION": "DISABLED",
-      "DROPPED": "NO",
-      "Expression": [],
-      "GENERATED": "N",
-      "INCLUDE_COLUMN": null,
-      "INDEX_NAME": "EMP_EMP_ID_PK",
-      "INDEX_TYPE": "NORMAL",
-      "INI_TRANS": 2.0,
-      "IOT_REDUNDANT_PKEY_ELIM": "NO",
-      "JOIN_INDEX": "NO",
-      "PARAMETERS": null,
-      "PREFIX_LENGTH": null,
-      "SECONDARY": "N",
-      "STATUS": "VALID",
-      "TABLE_NAME": "EMPLOYEES",
-      "TABLE_TYPE": "TABLE",
-      "TEMPORARY": "N",
-      "TYPE": "TABLE",
-      "UNIQUENESS": "UNIQUE",
-      "VISIBILITY": "VISIBLE"
-    },
-    {
-      "Columns": [
-        {
           "CHAR_LENGTH": 10.0,
           "COLLATED_COLUMN_ID": null,
           "COLUMN_LENGTH": 10.0,
           "COLUMN_NAME": "JOB_ID",
           "COLUMN_POSITION": 1.0,
           "DESCEND": "ASC",
-          "INDEX_NAME": "EMP_JOB_IX",
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
@@ -769,8 +594,8 @@
       "DROPPED": "NO",
       "Expression": [],
       "GENERATED": "N",
+      "GENERATED_INDEX_NAME": "EMP_JOB_IX",
       "INCLUDE_COLUMN": null,
-      "INDEX_NAME": "EMP_JOB_IX",
       "INDEX_TYPE": "NORMAL",
       "INI_TRANS": 2.0,
       "IOT_REDUNDANT_PKEY_ELIM": "NO",
@@ -795,7 +620,6 @@
           "COLUMN_NAME": "MANAGER_ID",
           "COLUMN_POSITION": 1.0,
           "DESCEND": "ASC",
-          "INDEX_NAME": "EMP_MANAGER_IX",
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
@@ -803,8 +627,8 @@
       "DROPPED": "NO",
       "Expression": [],
       "GENERATED": "N",
+      "GENERATED_INDEX_NAME": "EMP_MANAGER_IX",
       "INCLUDE_COLUMN": null,
-      "INDEX_NAME": "EMP_MANAGER_IX",
       "INDEX_TYPE": "NORMAL",
       "INI_TRANS": 2.0,
       "IOT_REDUNDANT_PKEY_ELIM": "NO",
@@ -829,7 +653,6 @@
           "COLUMN_NAME": "FIRST_NAME",
           "COLUMN_POSITION": 2.0,
           "DESCEND": "ASC",
-          "INDEX_NAME": "EMP_NAME_IX",
           "TABLE_NAME": "EMPLOYEES"
         },
         {
@@ -839,7 +662,6 @@
           "COLUMN_NAME": "LAST_NAME",
           "COLUMN_POSITION": 1.0,
           "DESCEND": "ASC",
-          "INDEX_NAME": "EMP_NAME_IX",
           "TABLE_NAME": "EMPLOYEES"
         }
       ],
@@ -847,8 +669,8 @@
       "DROPPED": "NO",
       "Expression": [],
       "GENERATED": "N",
+      "GENERATED_INDEX_NAME": "EMP_NAME_IX",
       "INCLUDE_COLUMN": null,
-      "INDEX_NAME": "EMP_NAME_IX",
       "INDEX_TYPE": "NORMAL",
       "INI_TRANS": 2.0,
       "IOT_REDUNDANT_PKEY_ELIM": "NO",

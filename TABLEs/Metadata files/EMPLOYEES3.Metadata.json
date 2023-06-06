@@ -1,0 +1,48 @@
+{
+  "Column": [
+    {
+      "CHAR_LENGTH": 50.0,
+      "CHAR_USED": "B",
+      "CHARACTER_SET_NAME": "CHAR_CS",
+      "COLLATED_COLUMN_ID": null,
+      "COLLATION": "USING_NLS_COMP",
+      "COLUMN_ID": 1.0,
+      "COLUMN_NAME": "EMPLOYEE_NAME",
+      "DATA_DEFAULT": null,
+      "DATA_LENGTH": 50.0,
+      "DATA_PRECISION": null,
+      "DATA_SCALE": null,
+      "DATA_TYPE": "VARCHAR2",
+      "DATA_TYPE_MOD": null,
+      "DEFAULT_LENGTH": null,
+      "DEFAULT_ON_NULL": "NO",
+      "Encrypted": [],
+      "HIDDEN_COLUMN": "NO",
+      "Identity": [],
+      "IDENTITY_COLUMN": "NO",
+      "INTERNAL_COLUMN_ID": 1.0,
+      "NULLABLE": "N",
+      "QUALIFIED_COL_NAME": "EMPLOYEE_NAME",
+      "SEGMENT_COLUMN_ID": 1.0,
+      "TABLE_NAME": "EMPLOYEES3",
+      "TYPE": "TABLE",
+      "UNUSABLE_BEFORE": null,
+      "UNUSABLE_BEGINNING": null,
+      "USER_GENERATED": "YES",
+      "VIRTUAL_COLUMN": "NO"
+    }
+  ],
+  "Column_Comments": [],
+  "Column_Grants": [],
+  "Comments": [],
+  "General": [
+    {
+      "IOT_TYPE": null,
+      "TABLE_NAME": "EMPLOYEES3",
+      "TYPE": "TABLE"
+    }
+  ],
+  "Grants": [],
+  "Table_Constraints": [],
+  "Table_Indexes": []
+}
